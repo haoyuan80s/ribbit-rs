@@ -7,6 +7,7 @@ pub enum Error {
     Store(store::Error),
     Embedder(embedder::Error),
     Sqlx(sqlx::Error),
+    EntityNotFound { entity: &'static str, id: i64 },
 }
 
 // region:    --- Error Boilerplate

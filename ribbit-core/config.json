@@ -6,12 +6,12 @@
     "url": "http://localhost:6334",
     "collections": [
       {
-        "name": "task",
+        "name": "dev",
         "dim": 1536,
         "distance": "Cosine"
       },
       {
-        "name": "dev",
+        "name": "task",
         "dim": 1536,
         "distance": "Cosine"
       }

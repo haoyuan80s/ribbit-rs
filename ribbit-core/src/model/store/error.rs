@@ -9,6 +9,7 @@ pub enum Error {
     QdrantFetchError(String),
     QdrantUpdateError(String),
     QdrantDeleteError(String),
+    QdrantCreateError(String),
 }
 
 // region:    --- Error Boilerplate

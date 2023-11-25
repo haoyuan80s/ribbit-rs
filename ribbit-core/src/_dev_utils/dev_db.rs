@@ -1,3 +1,4 @@
+use crate::config::config;
 use sqlx::postgres::PgPoolOptions;
 use sqlx::{Pool, Postgres};
 use std::fs;
@@ -25,12 +26,6 @@ const VS_COLLECTION_NAME: &str = "dev";
 
 pub async fn init_dev_db() -> Result<(), Box<dyn std::error::Error>> {
     info!("{:<12} - init_dev_db()", "FOR-DEV-ONLY");
-
-    let _ = VecStore::from_config()
-        .await
-        .unwrap()
-        .delete_collection(VS_COLLECTION_NAME)
-        .await;
 
     // -- Create the app_db/app_user with the postgres user.
     {

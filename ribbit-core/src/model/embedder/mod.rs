@@ -16,6 +16,7 @@ pub trait Embedder {
     async fn embed(&self, text: &str) -> Result<Vec<f32>>;
 }
 
+#[derive(Clone)]
 pub struct OpenAIEmbedder {
     client: Client<OpenAIConfig>,
     model: String,
