@@ -1,0 +1,23 @@
+{
+  "database": {
+    "db_url": "postgres://app_user:dev_only_pwd@localhost:9999/app_db"
+  },
+  "qdrant": {
+    "url": "http://localhost:6334",
+    "collections": [
+      {
+        "name": "task",
+        "dim": 1536,
+        "distance": "Cosine"
+      },
+      {
+        "name": "dev",
+        "dim": 1536,
+        "distance": "Cosine"
+      }
+    ]
+  },
+  "openai_embedder": {
+    "model": "text-embedding-ada-002"
+  }
+}

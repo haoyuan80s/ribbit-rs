@@ -1,0 +1,12 @@
+wr:
+  cargo watch -q -c -w src/ -w .cargo/ -x run
+wt:
+  cargo watch -q -c -w src/ -x test
+wq:
+  cargo watch -q -c -w examples/ -x "run --example quick_dev"
+doc:
+  cargo doc --open
+  
+  
+
+

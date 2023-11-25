@@ -1,0 +1,8 @@
+[database]
+DB_URL="postgres://postgres:postgres@localhost:5432/ribbit_core"
+
+[qdrant]
+URL="http://localhost:6334"
+COLLECTION_NAME="hao"
+EMBEDDING_DIM=1536
+DISTANCE="Cosine"
